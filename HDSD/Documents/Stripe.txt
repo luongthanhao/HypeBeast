@@ -1,0 +1,39 @@
+Stripe
+
+stripe đáng lẽ ra là nên chỉ lấy api thôi nhưng mà em không có tiền create account nên thôi thì xài cái test mode cho dev
+
+hướng dẫn cách xài test mode:
+
+phải tải cli test mode của tripe về nhưng mà trong folder đi kèm em đã tải sẵn 2 bản macos và windows cho thầy rồi
+
+windows: sau khi giải nén ra thầy mở cmd với quyền admin lên, cd tới thư mục chứa file giải nén và nhập lệnh:
+
+stripe login
+
+sau đó stripe sẽ yêu cầu folder 'webhooks' nhưng mà em đã tạo ra rồi và để ở trong folder shop_admin. Nên ta hãy bỏ qua bước này
+
+tiếp tục nhập vào terminal: 
+stripe listen --forward-to localhost:3000/webhooks
+
+như vậy là stripe cli test mode đã chạy thành công
+
+tới phần nhập visa thì thầy có thể nhập fake visa:
+
+4242 4242 4242 4242
+
+MM/YY thì miễn là trước thời gian hiện tại là được:
+
+VD: 06/24
+
+CVC: 123 là được
+
+và enter vậy là thầy đã có được 1 đôi giày xịn sò...
+
+sử dụng bên MacOs:
+
+thầy chỉ cần bỏ zip folder đã tải sẵn về vào đường dẫn:
+usr/local/bin
+
+sau đó giải nén ra và chạy như các bước ở trên là được
+
+xin lỗi thầy chấm bài vì sự bất tiện của Stripe mong thầy bỏ qua cho...

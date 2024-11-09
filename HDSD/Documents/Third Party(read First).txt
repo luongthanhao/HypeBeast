@@ -1,0 +1,18 @@
+Third Party
+
+app này sử dụng 3 party bên thứ 3 bao gồm:
+
+- Clerk cho authentication 
+
+- Stripe cho thanh toán và giao hàng
+
+- và MongoDB nhưng mà có thể chuyển đỗi lại thành local...
+
+đối với Stripe và Clerk đây có thể là 1 điểm trừ đối với em vì hiện tại chỉ là demo nhưng
+nếu được đưa vào thực tế thì sẽ là sẽ có lợi nhiều hơn
+
+ví dụ: Clerk cho phép authentication thông qua Google 1 cách rất gọn ràng 
+mà không cần phải code quá nhiều cũng như lo về bảo mật vì Clerk sẽ làm phần còn lại.
+
+Stripe cũng tương tự như clerk vì nó chỉ cần 1 tài khoản đã đăng ký có xác thực visa và vậy là xong
+rồi vì những chuyện còn lại đều để Stripe lo liệu.

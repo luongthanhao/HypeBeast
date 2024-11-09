@@ -1,0 +1,25 @@
+Clerk
+
+Trước hết nói về Clerk:
+
+- Clerk là 1 authentication liên kết đa nền tảng: google, facebook, github, Linknd, vv... Được sử dụng thông qua lên kết api và cài đặt thư viện local.
+
+- đây có thể là 1 bất hoặc 1 lợi thế tuỳ cách suy nghĩ của các thầy chấm bài
+	+ vd: thầy sẽ bắt lỗi em là nếu như bên thứ 3 sập thì em làm gì?
+		- câu trả lời là nó được 'google authentication' hậu thuẫn nên chuyện sập gần như bằng 0
+
+	+ nhưng nhìn vào mặt tích cực thì nó có ưu thế cực kì tiện lợi với cả lập trình viên và cả người dùng khi không cần code quá nhiều nhưng vẫn có 1 authentication đẹp gọn ràng và bảo mật. Đối với người dùng thì cũng tiện lợi vì chỉ cần 1 cái click để đăng nhập thông qua fb hoặc google hoặc bất cứ nền tảng social media khác...
+
+
+Quay lại Clerk trong Project
+
+- được chia làm 2 account application, 1 là account test phía server:
+
+- test account
+
+firstname: sora
+latename: test
+email: soratest@gmail.com
+pass: Yamikitsune1!
+
+và 1 account sử dụng phía client để tránh xung đột
